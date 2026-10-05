@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Impulso Fitness Club | Entrenamiento funcional y fuerza</title>
+  <meta name="description" content="Impulso Fitness Club: musculación, entrenamiento funcional, HIIT y yoga. Planes mensuales, clases dirigidas y profesores certificados.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+  <header class="site-header site-header--sticky">
+    <div class="container site-header__inner">
+      <a class="brand" href="#inicio" aria-label="Impulso Fitness Club, inicio">
+        <span class="brand__mark" aria-hidden="true">IF</span>
+        <span>Impulso&nbsp;Fitness</span>
+      </a>
+
+      <nav class="nav" data-nav aria-label="Navegación principal">
+        <button class="nav__toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-menu">
+          <span class="visually-hidden">Abrir menú de navegación</span>
+          <span class="nav__toggle-icon" aria-hidden="true"></span>
+        </button>
+
+        <ul class="nav__list" id="site-menu">
+          <li><a class="nav__link" href="#inicio">Inicio</a></li>
+          <li><a class="nav__link" href="#nosotros">Nosotros</a></li>
+          <li><a class="nav__link" href="#servicios">Servicios</a></li>
+          <li><a class="nav__link" href="#contacto">Contacto</a></li>
+          <li><a class="btn btn--primary nav__cta" href="#servicios">Ver planes</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <!-- Hero -->
+    <section class="hero hero--split hero--bold container" id="inicio">
+      <div class="hero__content reveal">
+        <span class="eyebrow">Entrenamiento funcional y fuerza</span>
+        <h1>Entrena con un plan, no con excusas</h1>
+        <p class="lead">
+          Más de 2.400 m² de musculación, funcional y clases dirigidas. Profesores que
+          corrigen tu técnica y planes mensuales flexibles para que empieces esta semana.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#servicios">Ver planes y precios</a>
+          <a class="btn btn--ghost" href="#contacto">Pedir clase de prueba</a>
+        </div>
+      </div>
+      <div class="hero__media reveal">
+        <img
+          src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&amp;fit=crop&amp;w=1600&amp;q=80"
+          alt="Sala de musculación con mancuernas y equipamiento de fuerza"
+          width="1600" height="1200" fetchpriority="high">
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="container" aria-label="Impulso Fitness en números">
+      <ul class="stats reveal">
+        <li class="stat">
+          <span class="stat__value">1.200</span>
+          <span class="stat__label">Socios activos</span>
+        </li>
+        <li class="stat">
+          <span class="stat__value">48</span>
+          <span class="stat__label">Clases por semana</span>
+        </li>
+        <li class="stat">
+          <span class="stat__value">12</span>
+          <span class="stat__label">Profesores certificados</span>
+        </li>
+        <li class="stat">
+          <span class="stat__value">2.400</span>
+          <span class="stat__label">m² de instalaciones</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="nosotros">
+      <div class="container">
+        <div class="grid grid--2 grid--middle">
+          <div class="reveal">
+            <div class="media-frame">
+              <img
+                src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&amp;fit=crop&amp;w=1600&amp;q=80"
+                alt="Persona entrenando con una barra en la zona de fuerza"
+                width="1600" height="1200" loading="lazy">
+            </div>
+          </div>
+
+          <div class="reveal">
+            <span class="eyebrow">Quiénes somos</span>
+            <h2>Un club pensado para entrenar en serio</h2>
+            <p>
+              Desde 2016 acompañamos a personas que quieren mejorar su salud, su rendimiento
+              o su composición corporal. Cada nuevo socio recibe una evaluación física inicial
+              y una rutina adaptada a su objetivo.
+            </p>
+            <p>
+              Nuestro plantel de profesores está formado en educación física y en
+              especializaciones de fuerza, movilidad y yoga. La prioridad es siempre
+              la técnica y la seguridad.
+            </p>
+
+            <ul class="value-list">
+              <li><span class="badge">Musculación</span></li>
+              <li><span class="badge">Funcional</span></li>
+              <li><span class="badge">HIIT</span></li>
+              <li><span class="badge">Yoga</span></li>
+              <li><span class="badge">Movilidad</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section section--tint" id="servicios">
+      <div class="container">
+        <div class="section__head section__head--center reveal">
+          <span class="eyebrow">Clases dirigidas</span>
+          <h2>Elige cómo quieres entrenar</h2>
+          <p class="lead">
+            Grupos reducidos, horarios de mañana, tarde y noche, y seguimiento de cada
+            profesor. Todas las clases están incluidas en los planes Full.
+          </p>
+        </div>
+
+        <div class="cards cards--3">
+          <article class="card reveal">
+            <div class="card__body">
+              <span class="card__icon" aria-hidden="true">🏋️</span>
+              <h3 class="card__title">Musculación</h3>
+              <p class="card__text">
+                Sala de fuerza con equipamiento completo, plan de rutina personalizado y
+                control de progreso cada cuatro semanas.
+              </p>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__body">
+              <span class="card__icon" aria-hidden="true">💪</span>
+              <h3 class="card__title">Entrenamiento funcional</h3>
+              <p class="card__text">
+                Circuitos con peso corporal, kettlebells y TRX para ganar fuerza, estabilidad
+                y movilidad aplicada al día a día.
+              </p>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__body">
+              <span class="card__icon" aria-hidden="true">🔥</span>
+              <h3 class="card__title">HIIT</h3>
+              <p class="card__text">
+                Intervalos de alta intensidad de 45 minutos, diseñados para mejorar la
+                capacidad cardiovascular y la resistencia.
+              </p>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__body">
+              <span class="card__icon" aria-hidden="true">🧘</span>
+              <h3 class="card__title">Yoga y movilidad</h3>
+              <p class="card__text">
+                Clases para mejorar la flexibilidad, aliviar tensiones y complementar el
+                entrenamiento de fuerza. Ideal para principiantes.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <div class="section__head section__head--center reveal plans__head">
+          <span class="eyebrow">Planes mensuales</span>
+          <h2>Cuotas claras, sin cargos sorpresa</h2>
+        </div>
+
+        <div class="plans">
+          <article class="plan reveal">
+            <h3 class="plan__name">Plan Libre</h3>
+            <p class="plan__price">$ 32.000 <span>/ mes</span></p>
+            <ul class="plan__list">
+              <li>Acceso a sala de musculación</li>
+              <li>Rutina inicial personalizada</li>
+              <li>Horario completo de lunes a domingo</li>
+            </ul>
+            <a class="btn btn--ghost btn--block" href="#contacto">Consultar</a>
+          </article>
+
+          <article class="plan plan--featured reveal">
+            <span class="badge">El más elegido</span>
+            <h3 class="plan__name">Plan Full</h3>
+            <p class="plan__price">$ 45.000 <span>/ mes</span></p>
+            <ul class="plan__list">
+              <li>Musculación y todas las clases dirigidas</li>
+              <li>Evaluación física cada tres meses</li>
+              <li>Acceso sin límite de horario</li>
+              <li>Invitado gratis una vez por semana</li>
+            </ul>
+            <a class="btn btn--primary btn--block" href="#contacto">Solicitar alta</a>
+          </article>
+
+          <article class="plan reveal">
+            <h3 class="plan__name">Plan Personalizado</h3>
+            <p class="plan__price">$ 68.000 <span>/ mes</span></p>
+            <ul class="plan__list">
+              <li>Entrenamiento uno a uno con profesor</li>
+              <li>Plan nutricional de referencia</li>
+              <li>Seguimiento mensual de objetivos</li>
+            </ul>
+            <a class="btn btn--ghost btn--block" href="#contacto">Consultar</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Facilities -->
+    <section class="section" aria-labelledby="instalaciones-title">
+      <div class="container">
+        <div class="section__head section__head--center reveal">
+          <span class="eyebrow">Instalaciones</span>
+          <h2 id="instalaciones-title">Espacios para cada tipo de entrenamiento</h2>
+        </div>
+
+        <div class="grid grid--2">
+          <figure class="facility reveal">
+            <img
+              src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+              alt="Zona de entrenamiento funcional con equipamiento y colchonetas"
+              width="800" height="600" loading="lazy">
+            <figcaption>Sala de funcional y clases dirigidas</figcaption>
+          </figure>
+
+          <figure class="facility reveal">
+            <img
+              src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+              alt="Vestuarios y áreas comunes del club"
+              width="800" height="600" loading="lazy">
+            <figcaption>Vestuarios, lockers y zona de descanso</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section--tint" id="contacto">
+      <div class="container">
+        <div class="section__head section__head--center reveal">
+          <span class="eyebrow">Contacto</span>
+          <h2>Agenda tu clase de prueba</h2>
+          <p class="lead">
+            La primera clase es sin cargo. Completa el formulario y te contactamos para
+            coordinar día y horario. El formulario es una demostración.
+          </p>
+        </div>
+
+        <div class="contact">
+          <div class="contact__info reveal">
+            <div class="contact__item">
+              <span class="card__icon" aria-hidden="true">📍</span>
+              <p><strong>Dirección</strong><br>Av. del Parque 2210, Ciudad</p>
+            </div>
+            <div class="contact__item">
+              <span class="card__icon" aria-hidden="true">📞</span>
+              <p><strong>Teléfono</strong><br><a href="tel:+541155552640">+54 11 5555-2640</a></p>
+            </div>
+            <div class="contact__item">
+              <span class="card__icon" aria-hidden="true">✉️</span>
+              <p><strong>Correo</strong><br><a href="mailto:hola@impulsofitness.com">hola@impulsofitness.com</a></p>
+            </div>
+            <div class="contact__item">
+              <span class="card__icon" aria-hidden="true">🕘</span>
+              <div>
+                <p><strong>Horarios</strong></p>
+                <ul class="hours">
+                  <li><span>Lunes a viernes</span><span>06:00 – 23:00</span></li>
+                  <li><span>Sábados</span><span>08:00 – 20:00</span></li>
+                  <li><span>Domingos y feriados</span><span>09:00 – 14:00</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <form class="form reveal" data-contact-form novalidate>
+            <div class="field">
+              <label for="gym-name">Nombre</label>
+              <input id="gym-name" name="name" type="text" autocomplete="name" required>
+              <p class="field__error" id="gym-name-error" role="alert"></p>
+            </div>
+
+            <div class="field">
+              <label for="gym-email">Correo electrónico</label>
+              <input id="gym-email" name="email" type="email" autocomplete="email" required>
+              <p class="field__error" id="gym-email-error" role="alert"></p>
+            </div>
+
+            <div class="field">
+              <label for="gym-phone">Teléfono</label>
+              <input id="gym-phone" name="phone" type="tel" autocomplete="tel" required>
+              <p class="field__error" id="gym-phone-error" role="alert"></p>
+            </div>
+
+            <div class="field">
+              <label for="gym-goal">Objetivo principal</label>
+              <select id="gym-goal" name="goal" required>
+                <option value="">Selecciona una opción</option>
+                <option value="salud">Mejorar la salud y el estado físico</option>
+                <option value="fuerza">Ganar fuerza y masa muscular</option>
+                <option value="descenso">Descender de peso</option>
+                <option value="rendimiento">Mejorar rendimiento deportivo</option>
+              </select>
+              <p class="field__error" id="gym-goal-error" role="alert"></p>
+            </div>
+
+            <div class="field">
+              <label for="gym-message">Comentarios <span class="hint">(opcional)</span></label>
+              <textarea id="gym-message" name="message" rows="4"></textarea>
+              <p class="field__error" id="gym-message-error" role="alert"></p>
+            </div>
+
+            <button class="btn btn--primary btn--block" type="submit">Solicitar clase de prueba</button>
+            <p class="form__status" data-form-status role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <p class="footer__title">Impulso Fitness Club</p>
+          <p>
+            Musculación, funcional, HIIT y yoga con profesores certificados. Sitio de
+            demostración creado como propuesta comercial.
+          </p>
+        </div>
+
+        <div>
+          <p class="footer__title">Secciones</p>
+          <ul class="footer__list">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer__title">Propuesta</p>
+          <ul class="footer__list">
+            <li><a href="../../index.html">Volver al hub de propuestas</a></li>
+            <li><a href="tel:+541155552640">+54 11 5555-2640</a></li>
+            <li><a href="mailto:hola@impulsofitness.com">hola@impulsofitness.com</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="footer__bottom">
+        &copy; <span data-year>2026</span> Impulso Fitness Club. Sitio de demostración sin
+        logos ni marcas de terceros.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/main.js" defer></script>
+</body>
+</html>

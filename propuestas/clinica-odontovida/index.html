@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OdontoVida | Clínica dental integral</title>
+  <meta name="description" content="OdontoVida: odontología general, ortodoncia, implantes y estética dental. Turnos online, obras sociales y equipo profesional.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+  <header class="site-header site-header--sticky">
+    <div class="container site-header__inner">
+      <a class="brand" href="#inicio" aria-label="OdontoVida, inicio">
+        <span class="brand__mark" aria-hidden="true">OV</span>
+        <span>OdontoVida</span>
+      </a>
+
+      <nav class="nav" data-nav aria-label="Navegación principal">
+        <button class="nav__toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-menu">
+          <span class="visually-hidden">Abrir menú de navegación</span>
+          <span class="nav__toggle-icon" aria-hidden="true"></span>
+        </button>
+
+        <ul class="nav__list" id="site-menu">
+          <li><a class="nav__link" href="#inicio">Inicio</a></li>
+          <li><a class="nav__link" href="#nosotros">Nosotros</a></li>
+          <li><a class="nav__link" href="#servicios">Servicios</a></li>
+          <li><a class="nav__link" href="#contacto">Contacto</a></li>
+          <li><a class="btn btn--primary nav__cta" href="#contacto">Pedir turno</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <!-- Hero -->
+    <section class="hero hero--split hero--clinic container" id="inicio">
+      <div class="hero__content reveal">
+        <span class="eyebrow">Clínica dental integral</span>
+        <h1>Tu sonrisa, en manos de un equipo que escucha</h1>
+        <p class="lead">
+          Diagnóstico claro, tratamientos sin dolor y planes de pago accesibles. Atendemos
+          odontología general, ortodoncia, implantes y estética dental en un solo lugar.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#contacto">Pedir turno online</a>
+          <a class="btn btn--ghost" href="#servicios">Conocer los servicios</a>
+        </div>
+      </div>
+      <div class="hero__media reveal">
+        <img
+          src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&amp;fit=crop&amp;w=1600&amp;q=80"
+          alt="Consultorio dental moderno con equipo odontológico"
+          width="1600" height="1200" fetchpriority="high">
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="container" aria-label="OdontoVida en números">
+      <ul class="stats reveal">
+        <li class="stat">
+          <span class="stat__value">15</span>
+          <span class="stat__label">Años de experiencia</span>
+        </li>
+        <li class="stat">
+          <span class="stat__value">9.500</span>
+          <span class="stat__label">Tratamientos realizados</span>
+        </li>
+        <li class="stat">
+          <span class="stat__value">98%</span>
+          <span class="stat__label">Pacientes que recomiendan</span>
+        </li>
+        <li class="stat">
+          <span class="stat__value">6</span>
+          <span class="stat__label">Especialidades</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="nosotros">
+      <div class="container">
+        <div class="grid grid--2 grid--middle">
+          <div class="reveal">
+            <div class="media-frame">
+              <img
+                src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&amp;fit=crop&amp;w=1600&amp;q=80"
+                alt="Profesional odontólogo atendiendo a un paciente en el consultorio"
+                width="1600" height="1200" loading="lazy">
+            </div>
+          </div>
+
+          <div class="reveal">
+            <span class="eyebrow">Quiénes somos</span>
+            <h2>Una clínica pensada para que vengas sin miedo</h2>
+            <p>
+              Desde 2010 atendemos a familias y a pacientes que necesitaban retomar su salud
+              bucal. Explicamos cada diagnóstico con claridad, presentamos un plan de
+              tratamiento por escrito y acordamos los tiempos contigo.
+            </p>
+            <p>
+              Trabajamos con materiales de primera calidad, esterilización certificada y
+              tecnología de diagnóstico digital para que cada tratamiento sea preciso y
+              cómodo.
+            </p>
+
+            <ul class="value-list">
+              <li><span class="badge">Odontología general</span></li>
+              <li><span class="badge">Ortodoncia</span></li>
+              <li><span class="badge">Implantes</span></li>
+              <li><span class="badge">Estética dental</span></li>
+              <li><span class="badge">Endodoncia</span></li>
+              <li><span class="badge">Odontopediatría</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section section--tint" id="servicios">
+      <div class="container">
+        <div class="section__head section__head--center reveal">
+          <span class="eyebrow">Servicios</span>
+          <h2>Tratamientos para toda la familia</h2>
+          <p class="lead">
+            Cada tratamiento comienza con una consulta de diagnóstico y un presupuesto
+            detallado, sin costos ocultos.
+          </p>
+        </div>
+
+        <div class="cards cards--3">
+          <article class="card reveal">
+            <div class="card__body">
+              <span class="card__icon" aria-hidden="true">🦷</span>
+              <h3 class="card__title">Odontología general</h3>
+              <p class="card__text">
+                Limpiezas, empastes, tratamientos de conducto y control preventivo para
+                mantener la salud bucal en el día a día.
+              </p>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__body">
+              <span class="card__icon" aria-hidden="true">😁</span>
+              <h3 class="card__title">Ortodoncia</h3>
+              <p class="card__text">
+                Brackets metálicos, estéticos y alineadores transparentes, con controles
+                mensuales y seguimiento fotográfico del progreso.
+              </p>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__body">
+              <span class="card__icon" aria-hidden="true">🔩</span>
+              <h3 class="card__title">Implantes dentales</h3>
+              <p class="card__text">
+                Reposición de piezas perdidas con implantes de titanio y coronas a medida,
+                planificados con tomografía digital.
+              </p>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__body">
+              <span class="card__icon" aria-hidden="true">✨</span>
+              <h3 class="card__title">Estética dental</h3>
+              <p class="card__text">
+                Blanqueamiento, carillas y diseño de sonrisa para mejorar la armonía de tu
+                sonrisa de forma conservadora.
+              </p>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__body">
+              <span class="card__icon" aria-hidden="true">🩺</span>
+              <h3 class="card__title">Endodoncia</h3>
+              <p class="card__text">
+                Tratamientos de conducto con tecnología rotatoria, más rápidos y con menos
+                molestias posteriores.
+              </p>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__body">
+              <span class="card__icon" aria-hidden="true">🧒</span>
+              <h3 class="card__title">Odontopediatría</h3>
+              <p class="card__text">
+                Atención especializada para niños y niñas, con un enfoque amable y preventivo
+                para generar confianza desde la primera visita.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technology -->
+    <section class="section" aria-labelledby="tecnologia-title">
+      <div class="container">
+        <div class="grid grid--2 grid--middle">
+          <div class="reveal">
+            <span class="eyebrow">Diagnóstico</span>
+            <h2 id="tecnologia-title">Tecnología que hace la diferencia</h2>
+            <p>
+              Usamos radiografía digital, tomografía 3D y escáner intraoral para planificar
+              cada tratamiento con precisión. Esto reduce los tiempos de trabajo y mejora la
+              comodidad de cada sesión.
+            </p>
+            <ul class="feature-list">
+              <li>Radiografía panorámica digital en el consultorio</li>
+              <li>Escáner intraoral sin moldes incómodos</li>
+              <li>Planificación de implantes con tomografía 3D</li>
+              <li>Esterilización certificada de todo el instrumental</li>
+            </ul>
+          </div>
+
+          <div class="reveal">
+            <div class="media-frame">
+              <img
+                src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                alt="Instrumental odontológico esterilizado y listo para usar"
+                width="800" height="600" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section class="section section--tint" aria-labelledby="equipo-title">
+      <div class="container">
+        <div class="section__head section__head--center reveal">
+          <span class="eyebrow">Equipo profesional</span>
+          <h2 id="equipo-title">Profesionales a cargo de tu tratamiento</h2>
+        </div>
+
+        <ul class="team">
+          <li class="team__member reveal">
+            <span class="avatar" aria-hidden="true">MH</span>
+            <div>
+              <p class="team__name">Dra. Mariana Herrera</p>
+              <p class="team__role">Odontología general y estética dental</p>
+            </div>
+          </li>
+          <li class="team__member reveal">
+            <span class="avatar" aria-hidden="true">TA</span>
+            <div>
+              <p class="team__name">Dr. Tomás Aguirre</p>
+              <p class="team__role">Implantología y cirugía oral</p>
+            </div>
+          </li>
+          <li class="team__member reveal">
+            <span class="avatar" aria-hidden="true">LF</span>
+            <div>
+              <p class="team__name">Dra. Lucía Ferreyra</p>
+              <p class="team__role">Ortodoncia y ortopedia maxilar</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contacto">
+      <div class="container">
+        <div class="section__head section__head--center reveal">
+          <span class="eyebrow">Contacto</span>
+          <h2>Pide tu turno</h2>
+          <p class="lead">
+            Completa el formulario y te confirmamos el turno por teléfono o correo. El
+            formulario es una demostración: no envía datos a ningún servidor.
+          </p>
+        </div>
+
+        <div class="contact">
+          <div class="contact__info reveal">
+            <div class="contact__item">
+              <span class="card__icon" aria-hidden="true">📍</span>
+              <p><strong>Dirección</strong><br>Av. de la Salud 1560, Ciudad</p>
+            </div>
+            <div class="contact__item">
+              <span class="card__icon" aria-hidden="true">📞</span>
+              <p><strong>Teléfono</strong><br><a href="tel:+541155557310">+54 11 5555-7310</a></p>
+            </div>
+            <div class="contact__item">
+              <span class="card__icon" aria-hidden="true">✉️</span>
+              <p><strong>Correo</strong><br><a href="mailto:turnos@odontovida.com">turnos@odontovida.com</a></p>
+            </div>
+            <div class="contact__item">
+              <span class="card__icon" aria-hidden="true">🕘</span>
+              <div>
+                <p><strong>Horarios</strong></p>
+                <ul class="hours">
+                  <li><span>Lunes a viernes</span><span>08:00 – 20:00</span></li>
+                  <li><span>Sábados</span><span>09:00 – 13:00</span></li>
+                  <li><span>Domingos</span><span>Cerrado</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="contact__item">
+              <span class="card__icon" aria-hidden="true">💳</span>
+              <div>
+                <p><strong>Coberturas</strong></p>
+                <p class="cover-note">
+                  Trabajamos con obras sociales nacionales y prepagas. Consulta tu cobertura
+                  al pedir el turno.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <form class="form reveal" data-contact-form novalidate>
+            <div class="field">
+              <label for="den-name">Nombre</label>
+              <input id="den-name" name="name" type="text" autocomplete="name" required>
+              <p class="field__error" id="den-name-error" role="alert"></p>
+            </div>
+
+            <div class="field">
+              <label for="den-email">Correo electrónico</label>
+              <input id="den-email" name="email" type="email" autocomplete="email" required>
+              <p class="field__error" id="den-email-error" role="alert"></p>
+            </div>
+
+            <div class="field">
+              <label for="den-phone">Teléfono</label>
+              <input id="den-phone" name="phone" type="tel" autocomplete="tel" required>
+              <p class="field__error" id="den-phone-error" role="alert"></p>
+            </div>
+
+            <div class="field">
+              <label for="den-service">Servicio de interés</label>
+              <select id="den-service" name="service" required>
+                <option value="">Selecciona una opción</option>
+                <option value="general">Odontología general</option>
+                <option value="ortodoncia">Ortodoncia</option>
+                <option value="implantes">Implantes dentales</option>
+                <option value="estetica">Estética dental</option>
+                <option value="endodoncia">Endodoncia</option>
+                <option value="odontopediatria">Odontopediatría</option>
+              </select>
+              <p class="field__error" id="den-service-error" role="alert"></p>
+            </div>
+
+            <div class="field">
+              <label for="den-insurance">Obra social o prepaga <span class="hint">(opcional)</span></label>
+              <input id="den-insurance" name="insurance" type="text">
+              <p class="field__error" id="den-insurance-error" role="alert"></p>
+            </div>
+
+            <div class="field">
+              <label for="den-message">Comentarios <span class="hint">(opcional)</span></label>
+              <textarea id="den-message" name="message" rows="4"></textarea>
+              <p class="field__error" id="den-message-error" role="alert"></p>
+            </div>
+
+            <button class="btn btn--primary btn--block" type="submit">Solicitar turno</button>
+            <p class="form__status" data-form-status role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <p class="footer__title">OdontoVida</p>
+          <p>
+            Clínica dental integral: odontología general, ortodoncia, implantes y estética.
+            Sitio de demostración creado como propuesta comercial.
+          </p>
+        </div>
+
+        <div>
+          <p class="footer__title">Secciones</p>
+          <ul class="footer__list">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer__title">Propuesta</p>
+          <ul class="footer__list">
+            <li><a href="../../index.html">Volver al hub de propuestas</a></li>
+            <li><a href="tel:+541155557310">+54 11 5555-7310</a></li>
+            <li><a href="mailto:turnos@odontovida.com">turnos@odontovida.com</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="footer__bottom">
+        &copy; <span data-year>2026</span> OdontoVida. Sitio de demostración sin logos ni
+        marcas de terceros.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/main.js" defer></script>
+</body>
+</html>

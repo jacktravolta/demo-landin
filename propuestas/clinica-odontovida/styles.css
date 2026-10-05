@@ -1,0 +1,171 @@
+/* ==========================================================================
+   OdontoVida — landing styles.
+   Teal brand tokens plus clean clinical flourishes on top of base.css.
+   ========================================================================== */
+
+:root {
+  --brand: #0f766e;
+  --brand-dark: #115e59;
+  --brand-soft: #ccfbf1;
+  --accent: #14b8a6;
+
+  --bg: #f5faf9;
+  --surface: #ffffff;
+  --text: #10201e;
+  --muted: #5a6b68;
+  --border: #d9e8e5;
+
+  --font-head: "Poppins", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-body: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+/* Soft clinical hero backdrop */
+.hero--clinic {
+  position: relative;
+}
+
+.hero--clinic::before {
+  content: "";
+  position: absolute;
+  inset: calc(-1 * var(--space-4)) 0 0;
+  z-index: -1;
+  background: radial-gradient(
+      110% 90% at 85% 0%,
+      color-mix(in srgb, var(--accent) 16%, transparent),
+      transparent 62%
+    ),
+    linear-gradient(180deg, var(--brand-soft), transparent 80%);
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+}
+
+/* Shared helpers */
+.grid--middle {
+  align-items: center;
+}
+
+.media-frame {
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  aspect-ratio: 4 / 3;
+}
+
+.media-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.value-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin: var(--space-5) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Checklist used in the technology block */
+.feature-list {
+  display: grid;
+  gap: var(--space-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.feature-list li {
+  position: relative;
+  padding-left: 1.75rem;
+  color: var(--muted);
+}
+
+.feature-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--brand);
+  font-weight: 700;
+}
+
+/* Professional team */
+.team {
+  display: grid;
+  gap: var(--space-5);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .team {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.team__member {
+  display: flex;
+  gap: var(--space-4);
+  align-items: center;
+  padding: var(--space-5);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+}
+
+.avatar {
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--brand-soft);
+  color: var(--brand-dark);
+  font-family: var(--font-head);
+  font-weight: 700;
+}
+
+.team__name {
+  margin: 0;
+  font-family: var(--font-head);
+  font-weight: 600;
+}
+
+.team__role {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+/* Opening hours list */
+.hours {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: var(--space-1);
+}
+
+.hours li {
+  display: flex;
+  gap: var(--space-4);
+  justify-content: space-between;
+  min-width: 15rem;
+  color: var(--muted);
+}
+
+.hours li span:last-child {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.cover-note {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}

@@ -1,0 +1,137 @@
+/* ==========================================================================
+   Sabor Andino — landing styles.
+   Only brand tokens and site-specific flourishes live here; the shared
+   component contract is defined in assets/css/base.css.
+   ========================================================================== */
+
+:root {
+  --brand: #b4451f;
+  --brand-dark: #8a3417;
+  --brand-soft: #fbeee4;
+  --accent: #d99a1e;
+
+  --bg: #fbf7f1;
+  --surface: #fffdf9;
+  --text: #2b1d16;
+  --muted: #6f5c50;
+  --border: #eadccf;
+
+  --font-head: "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-body: "Source Sans 3", "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+/* Warm hero backdrop */
+.hero--warm {
+  position: relative;
+}
+
+.hero--warm::before {
+  content: "";
+  position: absolute;
+  inset: calc(-1 * var(--space-4)) 0 0;
+  z-index: -1;
+  background: radial-gradient(
+      120% 90% at 12% 0%,
+      color-mix(in srgb, var(--accent) 18%, transparent),
+      transparent 60%
+    ),
+    linear-gradient(180deg, var(--brand-soft), transparent 80%);
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+}
+
+/* Two-column blocks that should stay vertically centered */
+.grid--middle {
+  align-items: center;
+}
+
+/* Framed image used in the about block */
+.media-frame {
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  aspect-ratio: 4 / 3;
+}
+
+.media-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.value-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin: var(--space-5) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Signature dishes board */
+.menu-board {
+  display: grid;
+  gap: var(--space-4);
+}
+
+@media (min-width: 768px) {
+  .menu-board {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-5) var(--space-7);
+  }
+}
+
+.menu-board__item {
+  display: flex;
+  gap: var(--space-4);
+  align-items: baseline;
+  justify-content: space-between;
+  padding-bottom: var(--space-4);
+  border-bottom: 1px dashed var(--border);
+}
+
+.menu-board__text {
+  max-width: 34rem;
+}
+
+.menu-board__dish {
+  margin: 0 0 var(--space-1);
+  font-size: 1.2rem;
+}
+
+.menu-board__text p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.98rem;
+}
+
+.menu-board__price {
+  flex: 0 0 auto;
+  color: var(--brand-dark);
+  font-family: var(--font-head);
+  font-size: 1.1rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* Opening hours list */
+.hours {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: var(--space-1);
+}
+
+.hours li {
+  display: flex;
+  gap: var(--space-4);
+  justify-content: space-between;
+  min-width: 15rem;
+  color: var(--muted);
+}
+
+.hours li span:last-child {
+  color: var(--text);
+  font-weight: 600;
+}

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sabor Andino | Cocina andina de autor</title>
+  <meta name="description" content="Sabor Andino es un restaurante de cocina andina de autor. Menú de temporada, reservas, eventos privados y delivery en el centro de la ciudad.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+  <header class="site-header site-header--sticky">
+    <div class="container site-header__inner">
+      <a class="brand" href="#inicio" aria-label="Sabor Andino, inicio">
+        <span class="brand__mark" aria-hidden="true">SA</span>
+        <span>Sabor&nbsp;Andino</span>
+      </a>
+
+      <nav class="nav" data-nav aria-label="Navegación principal">
+        <button class="nav__toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-menu">
+          <span class="visually-hidden">Abrir menú de navegación</span>
+          <span class="nav__toggle-icon" aria-hidden="true"></span>
+        </button>
+
+        <ul class="nav__list" id="site-menu">
+          <li><a class="nav__link" href="#inicio">Inicio</a></li>
+          <li><a class="nav__link" href="#nosotros">Nosotros</a></li>
+          <li><a class="nav__link" href="#servicios">Servicios</a></li>
+          <li><a class="nav__link" href="#contacto">Contacto</a></li>
+          <li><a class="btn btn--primary nav__cta" href="#contacto">Reservar mesa</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <!-- Hero -->
+    <section class="hero hero--split hero--warm container" id="inicio">
+      <div class="hero__content reveal">
+        <span class="eyebrow">Cocina andina de autor</span>
+        <h1>Sabores de los Andes en una mesa contemporánea</h1>
+        <p class="lead">
+          Combinamos ingredientes de altura con técnicas de cocina de autor. Un menú de
+          temporada, un salón cálido y una carta de vinos pensada para acompañar cada plato.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#contacto">Reservar una mesa</a>
+          <a class="btn btn--ghost" href="#servicios">Conocer el menú</a>
+        </div>
+      </div>
+      <div class="hero__media reveal">
+        <img
+          src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&amp;fit=crop&amp;w=1600&amp;q=80"
+          alt="Salón del restaurante con mesas preparadas para el servicio"
+          width="1600" height="1200" fetchpriority="high">
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="container" aria-label="Sabor Andino en números">
+      <ul class="stats reveal">
+        <li class="stat">
+          <span class="stat__value">12</span>
+          <span class="stat__label">Años de trayectoria</span>
+        </li>
+        <li class="stat">
+          <span class="stat__value">4.8</span>
+          <span class="stat__label">Valoración promedio</span>
+        </li>
+        <li class="stat">
+          <span class="stat__value">60</span>
+          <span class="stat__label">Cubiertos en salón</span>
+        </li>
+        <li class="stat">
+          <span class="stat__value">3</span>
+          <span class="stat__label">Salones para eventos</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="nosotros">
+      <div class="container">
+        <div class="grid grid--2 grid--middle">
+          <div class="reveal">
+            <div class="media-frame">
+              <img
+                src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&amp;fit=crop&amp;w=1600&amp;q=80"
+                alt="Mesa servida con platos principales en un restaurante"
+                width="1600" height="1200" loading="lazy">
+            </div>
+          </div>
+
+          <div class="reveal">
+            <span class="eyebrow">Quiénes somos</span>
+            <h2>Una cocina de origen, con mirada actual</h2>
+            <p>
+              Nacimos en 2013 con una idea simple: llevar los productos de la puna, los valles
+              y la costa a una cocina de autor que respeta el sabor de cada ingrediente. Hoy
+              trabajamos con productores locales y una carta que cambia cuatro veces al año.
+            </p>
+            <p>
+              Nuestro equipo de cocina y salón atiende a cada mesa con la misma dedicación,
+              ya sea una cena íntima, un almuerzo de trabajo o la celebración de un evento
+              privado.
+            </p>
+
+            <ul class="value-list">
+              <li><span class="badge">Producto local</span></li>
+              <li><span class="badge">Menú de temporada</span></li>
+              <li><span class="badge">Opciones sin TACC</span></li>
+              <li><span class="badge">Opciones vegetarianas</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu highlights -->
+    <section class="section section--tint" aria-labelledby="carta-title">
+      <div class="container">
+        <div class="section__head section__head--center reveal">
+          <span class="eyebrow">Nuestra carta</span>
+          <h2 id="carta-title">Platos insignia de la temporada</h2>
+          <p class="lead">Una selección del menú vigente. La carta completa se entrega en el salón.</p>
+        </div>
+
+        <div class="menu-board reveal">
+          <article class="menu-board__item">
+            <div class="menu-board__text">
+              <h3 class="menu-board__dish">Trucha de altura a la brasa</h3>
+              <p>Papa nativa confitada, emulsión de hierbas andinas y crocante de quinoa.</p>
+            </div>
+            <span class="menu-board__price">$ 18.900</span>
+          </article>
+
+          <article class="menu-board__item">
+            <div class="menu-board__text">
+              <h3 class="menu-board__dish">Cordero braseado 12 horas</h3>
+              <p>Cocido a baja temperatura, puré de zapallo y reducción de vino de altura.</p>
+            </div>
+            <span class="menu-board__price">$ 22.500</span>
+          </article>
+
+          <article class="menu-board__item">
+            <div class="menu-board__text">
+              <h3 class="menu-board__dish">Risotto de hongos de pino</h3>
+              <p>Arroz carnaroli, hongos de temporada y queso de cabra de valle.</p>
+            </div>
+            <span class="menu-board__price">$ 16.400</span>
+          </article>
+
+          <article class="menu-board__item">
+            <div class="menu-board__text">
+              <h3 class="menu-board__dish">Dulce de cayote y nuez</h3>
+              <p>Mousse de cayote, praliné de nuez y helado de crema andina.</p>
+            </div>
+            <span class="menu-board__price">$ 8.900</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section" id="servicios">
+      <div class="container">
+        <div class="section__head section__head--center reveal">
+          <span class="eyebrow">Servicios</span>
+          <h2>Todo lo que ofrecemos</h2>
+          <p class="lead">
+            Desde una cena de paso hasta la organización completa de un evento, con la misma
+            atención en cada detalle.
+          </p>
+        </div>
+
+        <div class="cards cards--3">
+          <article class="card reveal">
+            <div class="card__media">
+              <img
+                src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                alt="Plato de autor emplatado en el restaurante"
+                width="800" height="500" loading="lazy">
+            </div>
+            <div class="card__body">
+              <span class="card__icon" aria-hidden="true">🍽️</span>
+              <h3 class="card__title">Menú degustación</h3>
+              <p class="card__text">
+                Siete pasos que recorren la temporada, con opción de maridaje de vinos de altura.
+                Disponible de martes a domingo por la noche.
+              </p>
+              <div class="card__footer">
+                <a class="card__link" href="#contacto">Consultar disponibilidad &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__media">
+              <img
+                src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                alt="Detalle de un plato servido con guarnición"
+                width="800" height="500" loading="lazy">
+            </div>
+            <div class="card__body">
+              <span class="card__icon" aria-hidden="true">📅</span>
+              <h3 class="card__title">Reservas y salón</h3>
+              <p class="card__text">
+                Reserva online o por teléfono. Confirmamos cada mesa el mismo día y guardamos
+                la reserva durante quince minutos de cortesía.
+              </p>
+              <div class="card__footer">
+                <a class="card__link" href="#contacto">Reservar una mesa &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__media">
+              <img
+                src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                alt="Ambiente del salón principal durante el servicio"
+                width="800" height="500" loading="lazy">
+            </div>
+            <div class="card__body">
+              <span class="card__icon" aria-hidden="true">🥂</span>
+              <h3 class="card__title">Eventos privados</h3>
+              <p class="card__text">
+                Tres salones para cumpleaños, cenas de empresa y celebraciones. Menú a medida,
+                servicio de mozos y coordinación del evento.
+              </p>
+              <div class="card__footer">
+                <a class="card__link" href="#contacto">Pedir presupuesto &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__media">
+              <img
+                src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                alt="Café y postre listos para el servicio de mesa"
+                width="800" height="500" loading="lazy">
+            </div>
+            <div class="card__body">
+              <span class="card__icon" aria-hidden="true">🛵</span>
+              <h3 class="card__title">Delivery y take away</h3>
+              <p class="card__text">
+                Los platos de la carta para retirar o recibir en casa, con empaque térmico y
+                entrega en un radio de ocho kilómetros.
+              </p>
+              <div class="card__footer">
+                <a class="card__link" href="#contacto">Consultar zona de entrega &rarr;</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section--tint" id="contacto">
+      <div class="container">
+        <div class="section__head section__head--center reveal">
+          <span class="eyebrow">Contacto</span>
+          <h2>Reservas y consultas</h2>
+          <p class="lead">
+            Completa el formulario y te confirmamos la disponibilidad. El formulario es una
+            demostración: no envía datos a ningún servidor.
+          </p>
+        </div>
+
+        <div class="contact">
+          <div class="contact__info reveal">
+            <div class="contact__item">
+              <span class="card__icon" aria-hidden="true">📍</span>
+              <p><strong>Dirección</strong><br>Av. Los Andes 1842, Ciudad</p>
+            </div>
+            <div class="contact__item">
+              <span class="card__icon" aria-hidden="true">📞</span>
+              <p><strong>Teléfono</strong><br><a href="tel:+541155550180">+54 11 5555-0180</a></p>
+            </div>
+            <div class="contact__item">
+              <span class="card__icon" aria-hidden="true">✉️</span>
+              <p><strong>Correo</strong><br><a href="mailto:reservas@saborandino.com">reservas@saborandino.com</a></p>
+            </div>
+            <div class="contact__item">
+              <span class="card__icon" aria-hidden="true">🕘</span>
+              <div>
+                <p><strong>Horarios</strong></p>
+                <ul class="hours">
+                  <li><span>Martes a domingo</span><span>12:00 – 15:00</span></li>
+                  <li><span>Martes a domingo</span><span>19:00 – 23:30</span></li>
+                  <li><span>Lunes</span><span>Cerrado</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <form class="form reveal" data-contact-form novalidate>
+            <div class="field">
+              <label for="rsv-name">Nombre</label>
+              <input id="rsv-name" name="name" type="text" autocomplete="name" required>
+              <p class="field__error" id="rsv-name-error" role="alert"></p>
+            </div>
+
+            <div class="field">
+              <label for="rsv-email">Correo electrónico</label>
+              <input id="rsv-email" name="email" type="email" autocomplete="email" required>
+              <p class="field__error" id="rsv-email-error" role="alert"></p>
+            </div>
+
+            <div class="field">
+              <label for="rsv-phone">Teléfono <span class="hint">(opcional)</span></label>
+              <input id="rsv-phone" name="phone" type="tel" autocomplete="tel">
+              <p class="field__error" id="rsv-phone-error" role="alert"></p>
+            </div>
+
+            <div class="field">
+              <label for="rsv-date">Fecha de la reserva</label>
+              <input id="rsv-date" name="date" type="date" required>
+              <p class="field__error" id="rsv-date-error" role="alert"></p>
+            </div>
+
+            <div class="field">
+              <label for="rsv-guests">Cantidad de personas</label>
+              <select id="rsv-guests" name="guests" required>
+                <option value="">Selecciona una opción</option>
+                <option value="2">2 personas</option>
+                <option value="3">3 personas</option>
+                <option value="4">4 personas</option>
+                <option value="5-8">5 a 8 personas</option>
+                <option value="9+">Más de 8 personas (evento)</option>
+              </select>
+              <p class="field__error" id="rsv-guests-error" role="alert"></p>
+            </div>
+
+            <div class="field">
+              <label for="rsv-message">Comentarios <span class="hint">(opcional)</span></label>
+              <textarea id="rsv-message" name="message" rows="4"></textarea>
+              <p class="field__error" id="rsv-message-error" role="alert"></p>
+            </div>
+
+            <button class="btn btn--primary btn--block" type="submit">Solicitar reserva</button>
+            <p class="form__status" data-form-status role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <p class="footer__title">Sabor Andino</p>
+          <p>
+            Cocina andina de autor. Menú de temporada, reservas, eventos privados y delivery.
+            Sitio de demostración creado como propuesta comercial.
+          </p>
+        </div>
+
+        <div>
+          <p class="footer__title">Secciones</p>
+          <ul class="footer__list">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer__title">Propuesta</p>
+          <ul class="footer__list">
+            <li><a href="../../index.html">Volver al hub de propuestas</a></li>
+            <li><a href="tel:+541155550180">+54 11 5555-0180</a></li>
+            <li><a href="mailto:reservas@saborandino.com">reservas@saborandino.com</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="footer__bottom">
+        &copy; <span data-year>2026</span> Sabor Andino. Sitio de demostración sin logos ni
+        marcas de terceros.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/main.js" defer></script>
+</body>
+</html>

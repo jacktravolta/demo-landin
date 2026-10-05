@@ -342,14 +342,20 @@ button {
   display: block;
   width: 20px;
   height: 2px;
+  border-radius: 2px;
   background: currentColor;
   transition: transform var(--transition), opacity var(--transition);
+}
+
+.nav__toggle-icon {
+  position: relative;
 }
 
 .nav__toggle-icon::before,
 .nav__toggle-icon::after {
   content: "";
-  position: relative;
+  position: absolute;
+  left: 0;
 }
 
 .nav__toggle-icon::before {
@@ -357,7 +363,7 @@ button {
 }
 
 .nav__toggle-icon::after {
-  top: 5px;
+  top: 7px;
 }
 
 .nav.is-open .nav__toggle-icon {
@@ -675,6 +681,18 @@ button {
   align-items: flex-start;
 }
 
+/* Allow long, unbreakable strings (emails, URLs) to shrink and wrap
+   instead of forcing horizontal overflow on very narrow screens. */
+.contact__info,
+.contact__item,
+.contact__item > * {
+  min-width: 0;
+}
+
+.contact__item a {
+  overflow-wrap: anywhere;
+}
+
 .form {
   display: grid;
   gap: var(--space-5);
@@ -776,6 +794,7 @@ button {
 
 .footer a {
   color: #ffffff;
+  overflow-wrap: anywhere;
 }
 
 .footer a:hover {
@@ -863,11 +882,15 @@ button {
     position: absolute;
     top: calc(100% + 10px);
     right: 0;
-    left: 0;
+    left: auto;
     display: none;
     flex-direction: column;
     align-items: stretch;
     gap: var(--space-1);
+    width: min(18rem, calc(100vw - 2 * var(--space-4)));
+    max-height: calc(100vh - var(--header-h) - 2 * var(--space-4));
+    max-height: calc(100dvh - var(--header-h) - 2 * var(--space-4));
+    overflow-y: auto;
     padding: var(--space-3);
     background: var(--surface);
     border: 1px solid var(--border);

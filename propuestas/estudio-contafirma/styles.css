@@ -1,0 +1,190 @@
+/* ==========================================================================
+   ContaFirma Asesores — landing styles.
+   Corporate blue + slate tokens and flourishes on top of base.css.
+   ========================================================================== */
+
+:root {
+  --brand: #1d4ed8;
+  --brand-dark: #1e3a8a;
+  --brand-soft: #eff4ff;
+  --accent: #0ea5e9;
+
+  --bg: #f6f8fc;
+  --surface: #ffffff;
+  --text: #0f172a;
+  --muted: #556176;
+  --border: #e2e7f0;
+
+  --font-head: "IBM Plex Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-body: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+/* Corporate dark-blue hero panel */
+.hero--corporate {
+  background: linear-gradient(135deg, #12245c 0%, #1e3a8a 55%, #1d4ed8 100%);
+  color: #eaf0fd;
+  padding-inline: clamp(var(--space-5), 5vw, var(--space-8));
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+.hero--corporate h1 {
+  color: #ffffff;
+}
+
+.hero--corporate .eyebrow {
+  color: #93c5fd;
+}
+
+.hero--corporate .lead {
+  color: #c3d2f2;
+}
+
+.hero--corporate .btn--ghost {
+  border-color: rgba(255, 255, 255, 0.35);
+  color: #ffffff;
+}
+
+.hero--corporate .btn--ghost:hover,
+.hero--corporate .btn--ghost:focus-visible {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--accent);
+  color: #ffffff;
+}
+
+/* Shared helpers */
+.grid--middle {
+  align-items: center;
+}
+
+.media-frame {
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  aspect-ratio: 4 / 3;
+}
+
+.media-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.value-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin: var(--space-5) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Monthly plans */
+.plans {
+  display: grid;
+  gap: var(--space-5);
+}
+
+@media (min-width: 768px) {
+  .plans {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: start;
+  }
+}
+
+.plan {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-6);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+}
+
+.plan--featured {
+  border-color: var(--brand);
+  border-width: 2px;
+  box-shadow: var(--shadow-lg);
+}
+
+.plan__name {
+  margin: 0;
+  font-size: 1.15rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.plan__price {
+  margin: 0;
+  color: var(--brand-dark);
+  font-family: var(--font-head);
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+
+.plan__price span {
+  color: var(--muted);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.plan__list {
+  display: grid;
+  gap: var(--space-2);
+  margin: 0 0 var(--space-4);
+  padding-left: 1.1rem;
+  color: var(--muted);
+  font-size: 0.96rem;
+}
+
+.plan .btn {
+  margin-top: auto;
+}
+
+/* Working method figures */
+.work {
+  margin: 0;
+  overflow: hidden;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+}
+
+.work img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.work figcaption {
+  padding: var(--space-4) var(--space-5);
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* Opening hours list */
+.hours {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: var(--space-1);
+}
+
+.hours li {
+  display: flex;
+  gap: var(--space-4);
+  justify-content: space-between;
+  min-width: 15rem;
+  color: var(--muted);
+}
+
+.hours li span:last-child {
+  color: var(--text);
+  font-weight: 600;
+}

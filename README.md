@@ -24,11 +24,16 @@ ni frameworks, ni base de datos. Puede publicarse tal cual en cualquier hosting 
 | Clínica dental | OdontoVida | General, ortodoncia, implantes y estética | `propuestas/clinica-odontovida/index.html` |
 | Inmobiliaria | Terra Propiedades | Venta, alquiler y tasaciones | `propuestas/inmobiliaria-terra/index.html` |
 | Estudio contable | ContaFirma Asesores | Contabilidad, impuestos, laboral y sociedades | `propuestas/estudio-contafirma/index.html` |
+| Panadería | La Espiga | Pan de masa madre a leña, horneadas y pedidos | `propuestas/panaderia-la-espiga/index.html` |
 
 Cada landing incluye las secciones `Inicio`, `Quiénes somos`, `Servicios` y `Contacto`,
 con navegación de anclas, menú móvil y formulario de contacto demostrativo.
 
-> **Importante:** los formularios son **demostrativos**. Validan del lado del cliente y
+> **Excepción:** la propuesta de **La Espiga** incluye un formulario REAL (`contact.php`)
+> que registra los pedidos en `contacts.log`. Requiere PHP para funcionar (local: `php -S localhost:8092 -t propuestas/panaderia-la-espiga`);
+> en hosting estático el formulario debe conectarse a un servicio de correo o un backend.
+
+> **Importante:** los demás formularios son **demostrativos**. Validan del lado del cliente y
 > muestran un mensaje de éxito, pero **no envían datos a ningún servidor**. Para un sitio
 > real habría que conectarlos a un servicio de correo o backend.
 
